@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(3000);
+    });
+});
+</script>
+<style>
+        body {
+            font-size: 28px;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: skyblue;
+        }
+        
+        .active {
+            background-color: #4CAF50;
+        }
+        </style>
+</head>
+<body>
+        <ul>
+                <li><a class="active" href="index.html">Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+        </ul>
+        <div class="">
+                <form action="login">
+                    <br>
+                    Name:
+                    <input type="text" name="Name" value="กรอกชื่อ">
+                    <br><br>
+                    Surname:
+                    <input type="text" name="Name" value="กรอกนามสกุล">
+                    <br><br>
+                    password:
+                    <input type="text" name="password" value="กรอกรหัสผ่าน">
+                    <br><br>
+                    Confirmpassword:
+                    <input type="text" name="confirm" value="ยืนยันรหัสผ่าน">
+                    <br><br>
+                    <button>register</button>
+                    <button>cancel</button>
+                </form>
+                    
+                </div>
+    
+</body>
+</html>
